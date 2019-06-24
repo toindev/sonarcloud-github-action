@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/SonarSource/sonarcloud-github-action.svg?branch=master)](https://travis-ci.com/SonarSource/sonarcloud-github-action)
+
 # Scan your code with SonarCloud
 
 Using this GitHub Action, scan your code with [SonarCloud](https://sonarcloud.io/) to detects bugs, vulnerabilities and code smells in more than 20 programming languages!
