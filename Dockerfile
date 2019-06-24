@@ -22,7 +22,8 @@ ENV PATH=${PATH}:${SONAR_SCANNER_HOME}/bin:${NODEJS_HOME}/bin
 RUN apt-get update \
     && apt-get install -y --no-install-recommends wget \
     && apt-get install -y --no-install-recommends git \
-    && apt-get install -y --no-install-recommends jq
+    && apt-get install -y --no-install-recommends jq \
+    && apt-get install -y --no-install-recommends pylint
 
 RUN wget -U "sonarcloud-github-action" -q -O sonar-scanner-cli.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}.zip \
     && unzip sonar-scanner-cli.zip \
